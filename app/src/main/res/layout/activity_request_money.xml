@@ -113,6 +113,8 @@
             android:autofillHints="emailAddress"
             android:hint="Agregar notas de transferencia"
             android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:paddingTop="14dp"
             android:lines="10" />
 
     </LinearLayout>

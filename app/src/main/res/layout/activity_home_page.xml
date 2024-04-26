@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/botonazul_style"
+            android:background="@drawable/botonceleste_style"
             android:drawableStart="@drawable/request_icon"
             android:drawablePadding="4.38dp"
             android:gravity="center_vertical"
