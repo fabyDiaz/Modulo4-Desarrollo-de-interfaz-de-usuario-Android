@@ -109,31 +109,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnIngresarDinero"
+        <Button
+            android:id="@+id/btnIngresarDineroHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/verde"
-            android:text="Enviar dinero"
-            app:cornerRadius="10dp"
-            app:icon="@drawable/send_icon"
-            app:iconGravity="start"
-
-            />
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/botonazul_style"
+            android:drawableStart="@drawable/request_icon"
+            android:drawablePadding="4.38dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="Ingresar Dinero"
+            android:layout_marginRight="7.5dp"/>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnEnviarDineroHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="7.5dp"
             android:layout_weight="1"
-            android:background="@color/verde"
-            android:text="Enviar dinero"
-            android:textColor="@color/black"
-            app:icon="@drawable/send_icon"
-            app:iconGravity="start" />
-
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/botonverde_style"
+            android:drawableStart="@drawable/send_icon"
+            android:drawablePadding="4.38dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="28dp"
+            android:text="Enviar Dinero"
+            style="@style/letra_negra"
+            android:layout_marginLeft="7.5dp"/>
 
     </LinearLayout>
 

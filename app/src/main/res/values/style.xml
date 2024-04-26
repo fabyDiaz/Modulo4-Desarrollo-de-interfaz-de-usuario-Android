@@ -73,6 +73,17 @@
 
     </style>
 
+    <style name="style_input_form_enviar_dinero">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">@color/verde</item>
+        <item name="android:textSize">16sp</item> <!-- Tamaño del texto del placeholder -->
+        <item name="android:paddingLeft">14sp</item>
+        <item name="android:textStyle">normal</item> <!-- Estilo del texto del placeholder -->
+        <item name="android:background">@drawable/edittextverde_style</item>
+    </style>
+
     <style name="ToolbarTitle">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
@@ -90,5 +101,10 @@
 
     <style name="ShapeAppearanceOverlay.App.CustomBorderedTextInputLayout" parent="">
         <item name="cornerSize">16dp</item> <!-- Radio de los bordes -->
+    </style>
+
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/spash_screen</item>
     </style>
 </resources>

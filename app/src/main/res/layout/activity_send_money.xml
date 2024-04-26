@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RequestMoneyActivity"
+    tools:context=".SendMoneyActivity"
     android:orientation="vertical"
     >
 
@@ -46,7 +46,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="24dp"
             android:layout_marginStart="15dp"
-            app:srcCompat="@mipmap/img"
+            app:srcCompat="@mipmap/pp_standar"
             />
 
         <TextView
@@ -85,14 +85,14 @@
         <TextView
             android:id="@+id/lbCantidadIngresar"
             style="@style/style_label_form"
-            android:text="Cantidad a Igresar"
+            android:text="Cantidad a transferir"
             android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editTextEmail"
-            style="@style/style_input_form_ingresar_dinero"
+            style="@style/style_input_form_enviar_dinero"
             android:autofillHints="emailAddress"
-            android:text="20.00"
+            android:text="12.50"
             android:inputType="text" />
 
     </LinearLayout>
@@ -120,6 +120,33 @@
             android:autofillHints="emailAddress"
             android:inputType="textMultiLine"
             android:lines="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/btnCrearCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/botonverde_style"
+            android:drawableStart="@drawable/send_icon"
+            android:drawablePadding="4.38dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="95dp"
+            android:text="Enviar Dinero"
+            style="@style/letra_negra"/>
 
     </LinearLayout>
 
