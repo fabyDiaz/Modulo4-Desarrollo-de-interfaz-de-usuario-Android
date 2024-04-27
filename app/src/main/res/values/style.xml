@@ -20,6 +20,13 @@
         <item name="android:padding">25dp</item>
     </style>
 
+    <style name="icono_ingreso_envio">
+        <item name="android:background">@drawable/fondo_redondo</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
     <style name="style_layout_form">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

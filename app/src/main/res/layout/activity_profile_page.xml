@@ -6,32 +6,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ProfilePageActivity"
-    android:backgroundTint="@color/white">
+    tools:context=".ProfilePageActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:backgroundTint="@color/fondoGris"
+        android:background="@color/fondoGris"
         android:paddingBottom="23dp"
         >
 
-        <com.google.android.material.appbar.AppBarLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="match_parent"
+            android:padding="16dp">
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/white"
-                app:navigationIcon="@drawable/edit_icon"
-                app:title="Mi perfil"
-                app:titleCentered="true"
-                app:titleTextAppearance="@style/ToolbarTitle" />
+            <TextView
+                android:id="@+id/txtMiperfila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi perfil"
+                android:textColor="@color/semiblack"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
 
-        </com.google.android.material.appbar.AppBarLayout>
+            <ImageView
+                android:id="@+id/editIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"/>
 
+        </RelativeLayout>
 
         <ImageView
             android:id="@+id/imageView5"
@@ -43,7 +53,7 @@
         <TextView
             android:id="@+id/textView8"
             android:textColor="@color/semiblack"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Amanda Alkemy"
@@ -54,7 +64,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.75"
         android:orientation="vertical"
         android:layout_marginTop="40dp">
 
@@ -63,10 +72,11 @@
             android:id="@+id/tarjetaMiInformacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
             android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp">
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/fondoGris">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -107,11 +117,12 @@
             android:id="@+id/tarjetaMisTarjetas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/fondoGris">>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -142,7 +153,8 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/baseline_chevron_right_24"
                     android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                   />
 
             </RelativeLayout>
 
@@ -152,11 +164,12 @@
             android:id="@+id/tarjetaOpciones"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/fondoGris">>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -197,11 +210,12 @@
             android:id="@+id/tarjetaCentroDeAyuda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
             android:layout_marginStart="15dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/fondoGris">>
 
             <RelativeLayout
                 android:layout_width="match_parent"
