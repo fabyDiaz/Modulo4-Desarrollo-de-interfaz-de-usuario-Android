@@ -10,7 +10,7 @@
     tools:context=".LoginPageActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textTituloLogin"
         android:layout_width="wrap_content"
         android:layout_height="104dp"
         android:layout_marginStart="30dp"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.10" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/layoutEmailLogin"
         style="@style/style_layout_form"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,57 +36,58 @@
         app:layout_constraintVertical_bias="0.35">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textEmailLogin"
             style="@style/style_label_form"
-            android:text="Email" />
+            android:text="@string/email_lb_loguea" />
 
         <EditText
             android:id="@+id/editTextEmail"
             style="@style/style_input_form"
             android:autofillHints="emailAddress"
-            android:hint="Ingresa tu email"
+            android:hint="@string/ingresa_tu_email_hint_logea"
             android:inputType="textEmailAddress" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/layoutPasswordLogin"
         style="@style/style_layout_form"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEmailLogin"
         >
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textPasswordLogin"
             style="@style/style_label_form"
-            android:text="Contraseña" />
+            android:text="@string/password_logea_txt" />
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/editTextPasswordLogin"
             style="@style/style_input_form"
             android:autofillHints="password"
-            android:hint="Ingresa tu contraseña"
+            android:hint="@string/password_hint_logea"
             android:inputType="textPassword" />
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/enlaceOlvidePassaword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Olvidaste tu contraseña?"
+        android:text="@string/olvidaste_password_enlace_logea"
         android:textColor="@color/azul"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/layoutPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPasswordLogin"
         />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLoginLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/botonceleste_style"
-        android:text="Login"
+        android:text="@string/login_btn_logea"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,10 +95,10 @@
         app:layout_constraintVertical_bias="0.90" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/enlaceCrearCuentaLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crear una nueva cuenta"
+        android:text="@string/crear_una_nueva_cuenta_enlace_logea"
         android:textColor="@color/azul"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
