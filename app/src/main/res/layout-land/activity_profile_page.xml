@@ -33,7 +33,7 @@
                 android:layout_centerHorizontal="true"/>
 
             <ImageView
-                android:id="@+id/editIcon"
+                android:id="@+id/imagenEditIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/edit_icon"
@@ -44,14 +44,14 @@
         </RelativeLayout>
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imagenFotoPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/perfil_amanda"
             android:layout_marginTop="13dp"/>
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textNombrePerfil"
             android:textColor="@color/semiblack"
             android:textSize="16sp"
             android:layout_width="match_parent"
@@ -97,7 +97,7 @@
                         android:layout_centerVertical="true"/>
 
                     <TextView
-                        android:id="@+id/txtMiInformacion"
+                        android:id="@+id/textMiInformacion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mi información"
@@ -143,7 +143,7 @@
                         android:layout_centerVertical="true"/>
 
                     <TextView
-                        android:id="@+id/txtMisTarjetas"
+                        android:id="@+id/textMisTarjetas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Mis tarjetas"
@@ -190,7 +190,7 @@
                         android:layout_centerVertical="true"/>
 
                     <TextView
-                        android:id="@+id/txtOpciones"
+                        android:id="@+id/textOpciones"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Opciones"
@@ -236,7 +236,7 @@
                         android:layout_centerVertical="true"/>
 
                     <TextView
-                        android:id="@+id/txtCentroAyuda"
+                        android:id="@+id/textCentroAyuda"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Centro de ayuda"

@@ -15,12 +15,12 @@
         tools:context=".LoginPageActivity">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textTituloLogin"
             android:layout_width="match_parent"
             android:layout_height="104dp"
             android:layout_marginStart="30dp"
             android:lineSpacingExtra="30dp"
-            android:text="Registrarse y empezar a transferir"
+            android:text="@string/titulo_signup"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -32,7 +32,7 @@
             app:layout_constraintVertical_bias="0.10" />
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
+            android:id="@+id/layoutEmailLogin"
             style="@style/style_layout_form"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,72 +43,72 @@
             <TextView
                 android:id="@+id/lbNombre"
                 style="@style/style_label_form"
-                android:text="Nombre" />
+                android:text="@string/nombre_lb_signup" />
 
             <EditText
                 android:id="@+id/inputNombre"
                 style="@style/style_input_form"
                 android:autofillHints="emailAddress"
-                android:hint="Ingresar nombre"
+                android:hint="@string/ingresar_nombre_hint_signup"
                 android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout4"
+            android:id="@+id/layoutApellidoSignup"
             style="@style/style_layout_form"
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+            app:layout_constraintTop_toBottomOf="@+id/layoutEmailLogin">
 
             <TextView
-                android:id="@+id/lbApellido"
+                android:id="@+id/textApellidoSignup"
                 style="@style/style_label_form"
-                android:text="Apellido" />
+                android:text="@string/apellido_txt_signup" />
 
             <EditText
-                android:id="@+id/inputApellido"
+                android:id="@+id/inputApellidoSignup"
                 style="@style/style_input_form"
                 android:autofillHints="name"
-                android:hint="Ingresar apellido"
+                android:hint="@string/ingresar_apellido_hint_signup"
                 android:inputType="textPersonName" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout5"
+            android:id="@+id/layoutEmailSignup"
             style="@style/style_layout_form"
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+            app:layout_constraintTop_toBottomOf="@+id/layoutApellidoSignup">
 
             <TextView
-                android:id="@+id/lbEmail"
+                android:id="@+id/textEmailSignup"
                 style="@style/style_label_form"
-                android:text="Email" />
+                android:text="@string/email_txt_signup" />
 
             <EditText
-                android:id="@+id/inputEmail"
+                android:id="@+id/inputEmailSignup"
                 style="@style/style_input_form"
                 android:autofillHints="emailAddress"
-                android:hint="Ingresar Email"
+                android:hint="@string/ingresar_email_hint_signup"
                 android:inputType="textEmailAddress" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout6"
+            android:id="@+id/layoutPasswordSignup"
             style="@style/style_layout_form"
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+            app:layout_constraintTop_toBottomOf="@+id/layoutEmailSignup">
 
             <TextView
-                android:id="@+id/lbPassword"
+                android:id="@+id/textPasswordSignup"
                 style="@style/style_label_form"
-                android:text="Contraseña" />
+                android:text="@string/password_txt_signup" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -116,10 +116,10 @@
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputPassword1"
+                    android:id="@+id/inputPasswordSignup"
                     style="@style/style_input_form"
                     android:autofillHints="password"
-                    android:hint="Ingresar contraseña"
+                    android:hint="@string/ingresar_password_hint_signup"
                     android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -132,12 +132,12 @@
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+            app:layout_constraintTop_toBottomOf="@+id/layoutPasswordSignup">
 
             <TextView
                 android:id="@+id/lbPassword2"
                 style="@style/style_label_form"
-                android:text="Contraseña" />
+                android:text="@string/password2_txt_signup" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -145,10 +145,10 @@
                 app:endIconMode="password_toggle">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputPassword2"
+                    android:id="@+id/inputPassword2Signup"
                     style="@style/style_input_form"
                     android:autofillHints="password"
-                    android:hint="Reingresar contraseña"
+                    android:hint="@string/reingresar_password_hint_signup"
                     android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -157,27 +157,27 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonLoginLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="59dp"
             android:background="@drawable/botonazul_style"
-            android:text="Login"
+            android:text="@string/login_signup_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/enlaceCrearCuentaLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:paddingBottom="32dp"
-            android:text="Crear una nueva cuenta"
+            android:text="@string/crear_una_nueva_cuenta_enlace_signup"
             android:textColor="@color/azul"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonLoginLogin" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

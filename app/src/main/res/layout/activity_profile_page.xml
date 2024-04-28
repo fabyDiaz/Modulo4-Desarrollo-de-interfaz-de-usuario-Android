@@ -25,7 +25,7 @@
                 android:id="@+id/txtMiperfila"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mi perfil"
+                android:text="@string/mi_perfil_profile_page"
                 android:textColor="@color/semiblack"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -33,7 +33,7 @@
                 android:layout_centerHorizontal="true"/>
 
             <ImageView
-                android:id="@+id/editIcon"
+                android:id="@+id/imagenEditIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/edit_icon"
@@ -44,14 +44,14 @@
         </RelativeLayout>
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imagenFotoPerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/perfil_amanda"
             android:layout_marginTop="13dp"/>
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textNombrePerfil"
             android:textColor="@color/semiblack"
             android:textSize="16sp"
             android:layout_width="match_parent"
@@ -92,10 +92,10 @@
                     android:layout_centerVertical="true"/>
 
                 <TextView
-                    android:id="@+id/txtMiInformacion"
+                    android:id="@+id/textMiInformacion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mi información"
+                    android:text="@string/mi_informacion_profilepage"
                     style="@style/letra_negra"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
@@ -138,10 +138,10 @@
                     android:layout_centerVertical="true"/>
 
                 <TextView
-                    android:id="@+id/txtMisTarjetas"
+                    android:id="@+id/textMisTarjetas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mis tarjetas"
+                    android:text="@string/mis_tarjetas_profilepage"
                     style="@style/letra_negra"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
@@ -185,10 +185,10 @@
                     android:layout_centerVertical="true"/>
 
                 <TextView
-                    android:id="@+id/txtOpciones"
+                    android:id="@+id/textOpciones"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Opciones"
+                    android:text="@string/opciones_profilepage"
                     style="@style/letra_negra"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
@@ -231,10 +231,10 @@
                     android:layout_centerVertical="true"/>
 
                 <TextView
-                    android:id="@+id/txtCentroAyuda"
+                    android:id="@+id/textCentroAyuda"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Centro de ayuda"
+                    android:text="@string/centro_de_ayuda_profilepage"
                     style="@style/letra_negra"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"

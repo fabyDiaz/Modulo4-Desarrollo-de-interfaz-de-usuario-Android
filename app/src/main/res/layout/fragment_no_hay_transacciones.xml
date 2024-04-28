@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/semiblackOpacity"
             android:textSize="12sp"
-            android:text="No hay transacciones registradas!" />
+            android:text="@string/no_hay_transacciones_registradas" />
 
     </LinearLayout>
 
