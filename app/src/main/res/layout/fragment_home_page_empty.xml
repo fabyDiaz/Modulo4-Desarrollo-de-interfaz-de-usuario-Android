@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/homePageEmpty"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePageActivity">
+    tools:context=".Fragmentos.HomePageEmpty">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:text="@string/inicio"
+        android:text="@string/inicio_home_empty"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textSaludo"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37sp"
-        android:text="@string/hola_amanda"
+        android:text="@string/bienvenida_home_empty"
         android:textSize="16sp"
         android:textColor="@color/whiteOpacity"
         app:layout_constraintBottom_toTopOf="@+id/textBalance"
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/balance_total"
+        android:text="@string/balance_total_home_empty"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textMontoTotal"
         app:layout_constraintStart_toStartOf="@+id/textSaludo"
@@ -67,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="@string/monto_home"
+        android:text="@string/monto_home_empty"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/textBalance"
@@ -84,7 +84,6 @@
         app:layout_constraintTop_toTopOf="@+id/textInicio"
         android:layout_marginEnd="30dp"
         app:srcCompat="@mipmap/amanda"
-
         />
 
     <ImageView
@@ -120,8 +119,8 @@
             android:drawableStart="@drawable/request_icon"
             android:drawablePadding="4.38dp"
             android:gravity="center_vertical"
-            android:paddingStart="18dp"
-            android:text="@string/ingresar_dinerobtn"
+            android:paddingLeft="18dp"
+            android:text="Ingresar Dinero"
             android:layout_marginRight="7.5dp"/>
 
         <Button
@@ -134,10 +133,10 @@
             android:drawableStart="@drawable/send_icon"
             android:drawablePadding="4.38dp"
             android:gravity="center_vertical"
-            android:paddingStart="28dp"
-            android:text="@string/enviar_dinero_btn"
+            android:paddingLeft="28dp"
+            android:text="Enviar Dinero"
             style="@style/letra_negra"
-            android:layout_marginStart="7.5dp"/>
+            android:layout_marginLeft="7.5dp"/>
 
     </LinearLayout>
 
@@ -145,7 +144,7 @@
         android:id="@+id/txtultimasTransacciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ultimas_transacciones_txt"
+        android:text="@string/ultimas_transacciones_home_empty_txt"
         android:textColor="@color/semiblack"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -155,12 +154,12 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_view"
+        android:name="com.example.alkewalletmodulo4.Fragmentos.NoHayTransacciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtultimasTransacciones"
-        android:name="com.example.alkewalletmodulo4.Fragmentos.UltimasTransacciones" />
+        app:layout_constraintTop_toBottomOf="@+id/txtultimasTransacciones" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

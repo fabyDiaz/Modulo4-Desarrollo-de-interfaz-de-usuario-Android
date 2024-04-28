@@ -2,75 +2,70 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/requestMoney"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SendMoneyActivity"
     android:orientation="vertical"
-    >
+    tools:context=".Fragmentos.RequestMoney">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
 
     <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/btnVolverRequest"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        app:title="Enviar Dinero"
         android:background="@color/white"
-        app:titleCentered="true"
-        app:titleTextAppearance="@style/ToolbarTitle"
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:navigationIconTint="@color/black"
-        />
+        app:title="Ingresar dinero"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTitle" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/blackOpacity"/>
+        android:background="@color/blackOpacity" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24sp"
-        >
+        android:layout_marginBottom="24sp">
 
         <ImageView
-            android:id="@+id/imagenPerfilEnviarDinero"
+            android:id="@+id/ImagenPerfilIngresoDinero"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            app:layout_constraintEnd_toStartOf="@+id/textNombreEnviarDinero"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/textNombreIngresoDinero"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="24dp"
+            app:srcCompat="@mipmap/img" />
+
+        <TextView
+            android:id="@+id/textNombreIngresoDinero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            app:srcCompat="@mipmap/pp_standar"
-            />
-
-        <TextView
-            android:id="@+id/textNombreEnviarDinero"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
-            android:text="@string/nombre_send"
+            android:text="@string/nombre_request"
             android:textColor="@color/black"
-            app:layout_constraintTop_toTopOf="@+id/imagenPerfilEnviarDinero"
-            app:layout_constraintStart_toEndOf="@+id/imagenPerfilEnviarDinero"
-            android:layout_marginStart="15dp"/>
+            app:layout_constraintStart_toEndOf="@+id/ImagenPerfilIngresoDinero"
+            app:layout_constraintTop_toTopOf="@+id/ImagenPerfilIngresoDinero" />
 
         <TextView
-            android:id="@+id/textEmailEnviarDinero"
+            android:id="@+id/textEmailIngresoDinero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/email_send"
+            android:layout_marginStart="15dp"
+            android:text="@string/email_request"
             android:textColor="@color/semiblackOpacity"
-            app:layout_constraintBottom_toBottomOf="@+id/imagenPerfilEnviarDinero"
-            app:layout_constraintTop_toBottomOf="@+id/textNombreEnviarDinero"
-            app:layout_constraintStart_toEndOf="@+id/imagenPerfilEnviarDinero"
-            android:layout_marginStart="15dp"/>
-
+            app:layout_constraintBottom_toBottomOf="@+id/ImagenPerfilIngresoDinero"
+            app:layout_constraintStart_toEndOf="@+id/ImagenPerfilIngresoDinero"
+            app:layout_constraintTop_toBottomOf="@+id/textNombreIngresoDinero" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -78,53 +73,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginStart="15sp"
-        android:layout_marginEnd="15sp">
+        android:layout_marginEnd="15sp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textCantidadIngresar"
             style="@style/style_label_form"
-            android:text="@string/cantidad_a_transferir_send"
-            android:textColor="@color/black"/>
+            android:text="@string/cantidad_ingresar_txt_request"
+            android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextMontoEnviarDinero"
-            style="@style/style_input_form_enviar_dinero"
+            android:id="@+id/editTextMontoIngresarDinero"
+            style="@style/style_input_form_ingresar_dinero"
             android:autofillHints="emailAddress"
-            android:text="@string/monto_send"
-            android:inputType="text" />
+            android:inputType="text"
+            android:text="@string/monto_request" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginStart="15sp"
+        android:layout_marginTop="32sp"
         android:layout_marginEnd="15sp"
-        android:layout_marginTop="32sp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textNotasTransferencia"
             style="@style/style_label_form"
-            android:text="@string/notas_transferencia_send"
-            android:textColor="@color/black"/>
+            android:text="@string/notas_transferencia_txt_request"
+            android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/editTextNotaEnviarDinero"
+            android:id="@+id/editTextNota"
             style="@style/style_text_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/notas_send"
             android:autofillHints="emailAddress"
+            android:hint="@string/notas_transferencia_request"
             android:inputType="textMultiLine"
-            android:lines="10"
             android:gravity="start|top"
             android:paddingTop="14dp"
-            />
+            android:lines="10" />
 
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -139,17 +134,16 @@
 
 
         <Button
-            android:id="@+id/btnEnviarDinero"
+            android:id="@+id/btnIngresarDinero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/botonverde_style"
-            android:drawableStart="@drawable/send_icon"
+            android:background="@drawable/botonazul_style"
+            android:drawableStart="@drawable/request_icon"
             android:drawablePadding="4.38dp"
             android:gravity="center_vertical"
-            android:paddingStart="95dp"
-            android:text="@string/enviar_dinero_send_btn"
-            style="@style/letra_negra"/>
+            android:paddingStart="85dp"
+            android:text="@string/ingresar_dinero_request_btn" />
 
     </LinearLayout>
 

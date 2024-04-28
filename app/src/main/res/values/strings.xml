@@ -116,4 +116,5 @@
     <string name="nombre5_fragment">Hiba Saleh</string>
     <string name="fecha5_fragment">Oct 04, 05:45 AM</string>
     <string name="monto5_fragment">+$09.00</string>
+    <string name="ya_tienes_una_cuenta_signup">Ya tienes una cuenta??</string>
 </resources>
