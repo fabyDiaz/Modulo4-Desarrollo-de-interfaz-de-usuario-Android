@@ -1,6 +1,8 @@
 package com.example.alkewalletmodulo4;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Toast.makeText(this, "onConfigurationChanged", Toast.LENGTH_SHORT).show();
     }
 }
