@@ -3,9 +3,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scrollView"
+    android:id="@+id/signupPage"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.SignupPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
@@ -157,7 +158,7 @@
 
 
         <Button
-            android:id="@+id/buttonLoginLogin"
+            android:id="@+id/buttonLoginSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="59dp"
@@ -168,16 +169,16 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
         <TextView
-            android:id="@+id/enlaceCrearCuentaLogin"
+            android:id="@+id/enlaceYaTieneCuentaSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:paddingBottom="32dp"
-            android:text="@string/crear_una_nueva_cuenta_enlace_signup"
+            android:text="@string/ya_tienes_una_cuenta_signup"
             android:textColor="@color/azul"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonLoginLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonLoginSignup" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

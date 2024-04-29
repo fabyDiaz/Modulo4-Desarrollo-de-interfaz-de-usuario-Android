@@ -2,10 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/requestMoney"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RequestMoneyActivity"
+    tools:context=".Fragmentos.RequestMoney"
     android:orientation="vertical"
     >
 
@@ -14,21 +14,21 @@
         android:layout_height="wrap_content"
         />
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:title="Ingresar dinero"
-            android:background="@color/white"
-            app:titleCentered="true"
-            app:titleTextAppearance="@style/ToolbarTitle"
-            app:navigationIcon="?attr/homeAsUpIndicator"
-            app:navigationIconTint="@color/black"
-            />
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Ingresar dinero"
+        android:background="@color/white"
+        app:titleCentered="true"
+        app:titleTextAppearance="@style/ToolbarTitle"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/black"
+        />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/blackOpacity"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackOpacity"/>
 
     <ScrollView
         android:layout_width="match_parent"
