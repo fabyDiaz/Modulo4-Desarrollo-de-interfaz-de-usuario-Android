@@ -1,5 +1,6 @@
 package com.example.alkewalletmodulo4;
 
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -27,11 +28,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        Toast.makeText(this, "onConfigurationChanged", Toast.LENGTH_SHORT).show();
-    }
+
 }
